@@ -27,6 +27,12 @@ See instructions. Delete this line and replace with your team's findings from us
 ## Prior Art & Originality
 
 See instructions. Delete this line and replace with a short statement of what your team checked (the project's Future Work and Open Questions, its roadmap, and its open issues and pull requests) and which parts of your proposal are original — new work not already specified, scheduled, or proposed by someone else.
+In the project's repo [here](https://github.com/bloombar/slide-machine), we checked the following sections:
+- Sections 18 and 19 - Future work and Open Questions - of [the spec document](https://github.com/bloombar/slide-machine/blob/better-faster/docs/SPEC.md)
+- Open PRs
+- Open issues
+
+The changes we propose doesn't seem to appear in any of these sections.a
 
 ## Stakeholders
 
@@ -35,6 +41,8 @@ See instructions. Delete this line and replace with the name(s) of the stakehold
 ## Product Vision Statement
 
 See instructions. Delete this line and place your Product Vision Statement here — one sentence describing the improvements and new features your team is proposing for The Slide Machine.
+
+We propose to revamp the way users can edit their slides after a lecture has already been generated, by adding features like the ability to add custom images, the ability to add new slides with text and bullet points, and the ability to easily change the style of the text and slides themselves.
 
 ## User Requirements
 

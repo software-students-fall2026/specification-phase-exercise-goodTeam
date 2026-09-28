@@ -12,6 +12,17 @@ A little exercise to get started with the specification phase of the software de
 ## Review of the Current Application
 
 See instructions. Delete this line and replace with your team's findings from using the live app at https://theslidemachine.com — at least 10 specific observations, each labeled as a strength, a weakness, or a gap, and drawn from more than one team member's use of the app.
+### Findings
+- The slides made are quite accurate to what was spoken.
+- Images generated are relevant.
+- Some slides break when switching between designs.
+- 'Refine with AI' feature makes the spoken part sound very robotic
+- No way to add images to a slide after it's been generated from speech.
+- No way to add a regular title/text slide after the fact.
+- Exit ticket generated had relevant questions and was nicely customizable.
+- Connection to google drive for exit ticket and sharing 
+- Export options are nice and easy to use
+- Great as a text-to-slides tool, could be brushed up as a slide-editing tool.
 
 ## Prior Art & Originality
 

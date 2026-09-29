@@ -80,7 +80,7 @@ can edit in bulk.
 13. As an instructor, I want an AI-generated summary or key-takeaways slide at the end of the deck so that I can close the lecture quickly.
 
 ### User 3: non-academic presentor
-#  1. As a presenter, I want to start from a blank deck with no learning objectives or quiz so that the app fits a talk that isn't a class.
+1. As a presenter, I want to start from a blank deck with no learning objectives or quiz so that the app fits a talk that isn't a class.
 2. As a presenter, I want to add a title, agenda, or section-divider slide after speaking so that the deck looks finished.
 3. As a presenter, I want to upload my logo and brand images and place them on any slide so that the deck matches my company.
 4. As a presenter, I want to ask the AI to rewrite a slide for a specific audience, such as executives, customers, or a general crowd, so that I can reuse one

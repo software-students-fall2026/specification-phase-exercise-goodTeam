@@ -42,11 +42,57 @@ See instructions. Delete this line and replace with the name(s) of the stakehold
 
 See instructions. Delete this line and place your Product Vision Statement here — one sentence describing the improvements and new features your team is proposing for The Slide Machine.
 
-We propose to revamp the way users can edit their slides after a lecture has already been generated, by adding features like the ability to add custom images, the ability to add new slides with text and bullet points, and the ability to easily change the style of the text and slides themselves.
+We propose to add an editing toolbal for use after a lecture has already been generated, with an AI editing feature.
 
 ## User Requirements
 
-See instructions. Delete this line and place a list of your User Stories here, grouped by type of user. These should describe functionality that is new or changed, not functionality the app already has.
+See instructions. Delete this line and place a list of your User Stories here, grouped by type of user. These should describe functionality that is new or changed, not functionality the app already has.  
+### User 1: student
+1. As a student, I want to see which slides were edited after the lecture so that I know how the deck differs from what I heard.
+2. As a student, I want to see the corrected version of a slide with a note that it was changed so that I trust the study material.
+3. As a student, I want to choose between the "as lectured" deck and the "final edited" deck so that I can study either.
+4. As a student, I want to add private notes to a slide so that I can study from one place.
+5. As a student, I want to flag a slide as unclear or possibly wrong so that the instructor can fix it.
+6. As a student, I want to ask the AI to explain a slide in simpler words, using only that slide's content, so that I can understand it on my own.
+7. As a student, I want to be told when an explanation is AI-generated so that I know to double-check it.
+8. As a student, I want to be notified when a deck I'm following is updated so that I don't study outdated material.
+9. As a student, I want to download the final edited deck so that I can study offline.
+10. As a student, I want to mark slides as "review later" so that I can prepare for the quiz.
+11. As a student, I want the shared deck to load with clear messages if the link has expired or the instructor made it private so that I know what happened.  
+
+### User 2: instructor
+1. As an instructor, I want to add a blank title or text slide anywhere in a generated deck so that I can add an intro, agenda, or transition I never said
+ aloud.
+2. As an instructor, I want to upload my own image onto a slide so that I'm not limited to the images the app picked.
+3. As an instructor, I want to search for a replacement image from inside the editor so that I can swap out one that doesn't fit.
+4. As an instructor, I want to drag, resize, and delete images and text boxes on a slide so that I can fix the layout myself.
+5. As an instructor, I want to duplicate, reorder, and delete slides so that the deck follows the order I want to teach in.
+6. As an instructor, I want to undo and redo my edits so that I can experiment without fear of breaking the deck.  
+7. As an instructor, I want to select text on a slide and ask the AI to rewrite it with an instruction like "shorter" or "more formal" so that I control the
+change.
+8. As an instructor, I want to see the AI's suggestion next to the original and accept or reject it so that the AI never overwrites my work without my say-so.
+9. As an instructor, I want to choose a tone for AI rewrites, such as conversational, academic, or plain, so that the spoken narration doesn't sound robotic.
+10. As an instructor, I want the AI to rewrite only the slide text and not the narration, or the other way around, so that I don't lose one when I fix the
+other.
+11. As an instructor, I want to ask the AI to generate a new slide from a short prompt so that I can fill a gap in the lecture.
+12. As an instructor, I want to apply one AI instruction to the whole deck, such as "simplify the wording", and review every change before saving so that I
+can edit in bulk.
+13. As an instructor, I want an AI-generated summary or key-takeaways slide at the end of the deck so that I can close the lecture quickly.
+
+### User 3: non-academic presentor
+#  1. As a presenter, I want to start from a blank deck with no learning objectives or quiz so that the app fits a talk that isn't a class.
+2. As a presenter, I want to add a title, agenda, or section-divider slide after speaking so that the deck looks finished.
+3. As a presenter, I want to upload my logo and brand images and place them on any slide so that the deck matches my company.
+4. As a presenter, I want to ask the AI to rewrite a slide for a specific audience, such as executives, customers, or a general crowd, so that I can reuse one
+ talk.
+5. As a presenter, I want to ask the AI to make a slide punchier or shorter so that it works on screen.
+6. As a presenter, I want to lock a slide so that AI edits and bulk changes never touch it.
+7. As a presenter, I want to save my favorite AI instructions as one-click presets so that I don't retype them.
+8. As a presenter, I want to combine slides from several talks into one deck so that I can build a new presentation.
+9. As a presenter, I want to set an AI tone once and have it apply to everything so that the deck stays consistent.
+10. As a presenter, I want to export the edited deck to PowerPoint or Google Slides with my changes intact so that I can present anywhere.
+11. As a presenter, I want to be warned before I export or share if the AI added text I haven't reviewed so that I don't share a mistake.  
+
 
 ## Activity Diagrams
 

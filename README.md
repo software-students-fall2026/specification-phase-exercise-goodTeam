@@ -9,6 +9,7 @@ A little exercise to get started with the specification phase of the software de
 #### Sanay Daptardar [sanay-d-nyu](https://github.com/sanay-d-nyu)
 #### James Li [DyingRavioli](https://github.com/DyingRavioli)
 #### Ryan Jiang [UIYrj](https://github.com/UIYrj)
+#### Yi Fei [yeefeizhao](https://github.com/yeefeizhao)
 
 ## Review of the Current Application
 
@@ -202,9 +203,8 @@ Opens from the new Image tool, or from "Replace" on a selected image. ADDED: upl
 6. Click the **logo** (top left) on any screen to return **Home**.
    
 ## Stakeholder Demo
-
-See instructions. Delete this line and place a link to the deck The Slide Machine generated during your presentation here, after you have presented.
+[Generated Slides](https://theslidemachine.com/d/untitled-b7aa2d4b)  
+[Demo Video](https://drive.google.com/file/d/17dKG8oKt1CCjvw9KnPkyyEsnSoyFMssP/view?usp=sharing)
 
 ## Exit Ticket
-
-See instructions. Delete this line and place a link to the exit-ticket quiz you generated from your demo deck and distributed to the class, along with a short note on what — if anything — you had to correct in the generated questions before publishing.
+[Exit Ticket](https://docs.google.com/forms/d/e/1FAIpQLSfMK71KOciCkYZE1e2kXqmM_jAf164aOWXw-KmMCZlWplIG3A/viewform)

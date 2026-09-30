@@ -143,7 +143,8 @@ Student: As a student, I want to add private notes to a slide so that I can stud
 <img width="2514" height="5656" alt="Student1UML" src="https://github.com/user-attachments/assets/71fafa02-e40d-4266-a3d2-14a8ade02387" />
 
 Student: As a student, I want to see which slides were edited after the lecture so that I know how the deck differs from what I heard.
-<img width="2749" height="3456" alt="Student2UML" src="https://github.com/user-attachments/assets/d6a5e7fb-e7f3-42bb-9e28-eee5597d506c" />
+<img width="2749" height="3456" alt="Student2UMLNEW" src="https://github.com/user-attachments/assets/19aa2380-c13c-4430-953e-d255397120c1" />
+
 
 Instructor: As an instructor, I want to drag, resize, and delete images and text boxes on a slide so that I can fix the layout myself.
 <img width="3647" height="4192" alt="Instructor1UML" src="https://github.com/user-attachments/assets/9a725d13-2571-401e-8395-b85b2e9a1292" />

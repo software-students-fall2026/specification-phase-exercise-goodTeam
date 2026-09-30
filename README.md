@@ -9,7 +9,7 @@ A little exercise to get started with the specification phase of the software de
 #### Sanay Daptardar [sanay-d-nyu](https://github.com/sanay-d-nyu)
 #### James Li [DyingRavioli](https://github.com/DyingRavioli)
 #### Ryan Jiang [UIYrj](https://github.com/UIYrj)
-#### Member 4
+
 ## Review of the Current Application
 
 ### Findings

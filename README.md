@@ -6,23 +6,23 @@ A little exercise to get started with the specification phase of the software de
 
 ### Team
 #### Sanay Daptardar [sanay-d-nyu](https://github.com/sanay-d-nyu)
-#### Member 2
+#### James Li [DyingRavioli](https://github.com/DyingRavioli)
 #### Member 3
 #### Member 4
 ## Review of the Current Application
 
 See instructions. Delete this line and replace with your team's findings from using the live app at https://theslidemachine.com — at least 10 specific observations, each labeled as a strength, a weakness, or a gap, and drawn from more than one team member's use of the app.
 ### Findings
-- The slides made are quite accurate to what was spoken.
-- Images generated are relevant.
-- Some slides break when switching between designs.
-- 'Refine with AI' feature makes the spoken part sound very robotic
-- No way to add images to a slide after it's been generated from speech.
-- No way to add a regular title/text slide after the fact.
-- Exit ticket generated had relevant questions and was nicely customizable.
-- Connection to google drive for exit ticket and sharing 
-- Export options are nice and easy to use
-- Great as a text-to-slides tool, could be brushed up as a slide-editing tool.
+- Strength: The slides made are quite accurate to what was spoken.
+- Strength: Images generated are relevant.
+- Weakness: Some slides break when switching between designs.
+- Weakness: 'Refine with AI' feature makes the spoken part sound very robotic
+- Gap: No way to add images to a slide after it's been generated from speech.
+- Gap: No way to add a regular title/text slide after the fact.
+- Strength: Exit ticket generated had relevant questions and was nicely customizable.
+- Strength: Connection to google drive for exit ticket and sharing 
+- Strength: Export options are nice and easy to use
+- Gap: Great as a text-to-slides tool, could be brushed up as a slide-editing tool.
 
 ## Prior Art & Originality
 
@@ -32,7 +32,7 @@ In the project's repo [here](https://github.com/bloombar/slide-machine), we chec
 - Open PRs
 - Open issues
 
-The changes we propose doesn't seem to appear in any of these sections.a
+Our AI tool creation concept we propose doesn't seem to appear in any of these sections.
 
 ## Stakeholders
 
@@ -58,7 +58,8 @@ See instructions. Delete this line and place a list of your User Stories here, g
 8. As a student, I want to be notified when a deck I'm following is updated so that I don't study outdated material.
 9. As a student, I want to download the final edited deck so that I can study offline.
 10. As a student, I want to mark slides as "review later" so that I can prepare for the quiz.
-11. As a student, I want the shared deck to load with clear messages if the link has expired or the instructor made it private so that I know what happened.  
+11. As a student, I want the shared deck to load with clear messages if the link has expired or the instructor made it private so that I know what happened.
+  
 
 ### User 2: instructor
 1. As an instructor, I want to add a blank title or text slide anywhere in a generated deck so that I can add an intro, agenda, or transition I never said
@@ -67,7 +68,8 @@ See instructions. Delete this line and place a list of your User Stories here, g
 3. As an instructor, I want to search for a replacement image from inside the editor so that I can swap out one that doesn't fit.
 4. As an instructor, I want to drag, resize, and delete images and text boxes on a slide so that I can fix the layout myself.
 5. As an instructor, I want to duplicate, reorder, and delete slides so that the deck follows the order I want to teach in.
-6. As an instructor, I want to undo and redo my edits so that I can experiment without fear of breaking the deck.  
+6. As an instructor, I want to undo and redo my edits so that I can experiment without fear of breaking the deck.
+  
 7. As an instructor, I want to select text on a slide and ask the AI to rewrite it with an instruction like "shorter" or "more formal" so that I control the
 change.
 8. As an instructor, I want to see the AI's suggestion next to the original and accept or reject it so that the AI never overwrites my work without my say-so.
@@ -91,12 +93,30 @@ can edit in bulk.
 8. As a presenter, I want to combine slides from several talks into one deck so that I can build a new presentation.
 9. As a presenter, I want to set an AI tone once and have it apply to everything so that the deck stays consistent.
 10. As a presenter, I want to export the edited deck to PowerPoint or Google Slides with my changes intact so that I can present anywhere.
-11. As a presenter, I want to be warned before I export or share if the AI added text I haven't reviewed so that I don't share a mistake.  
+11. As a presenter, I want to be warned before I export or share if the AI added text I haven't reviewed so that I don't share a mistake.
+  
 
 
 ## Activity Diagrams
 
-See instructions. Delete this line and place images of your UML Activity diagrams here, each with the text of the user story it illustrates.
+Student: As a student, I want to add private notes to a slide so that I can study from one place.
+<img width="2514" height="5656" alt="Student1UML" src="https://github.com/user-attachments/assets/71fafa02-e40d-4266-a3d2-14a8ade02387" />
+
+Student: As a student, I want to see which slides were edited after the lecture so that I know how the deck differs from what I heard.
+<img width="2749" height="3456" alt="Student2UML" src="https://github.com/user-attachments/assets/d6a5e7fb-e7f3-42bb-9e28-eee5597d506c" />
+
+Instructor: As an instructor, I want to drag, resize, and delete images and text boxes on a slide so that I can fix the layout myself.
+<img width="3647" height="4192" alt="Instructor1UML" src="https://github.com/user-attachments/assets/9a725d13-2571-401e-8395-b85b2e9a1292" />
+
+Instructor: As an instructor, I want to duplicate, reorder, and delete slides so that the deck follows the order I want to teach in.
+<img width="2556" height="4272" alt="Instructor2UML" src="https://github.com/user-attachments/assets/84bd4905-1a5b-43e7-8d13-2e1394c56b19" />
+
+Presenter: As a presenter, I want to save my favorite AI instructions as one-click presets so that I don't retype them.
+<img width="2660" height="3722" alt="Presenter1UML" src="https://github.com/user-attachments/assets/82594cd7-f664-443a-a983-5ca75fbf9d7a" />
+
+Presenter: As a presenter, I want to set an AI tone once and have it apply to everything so that the deck stays consistent.
+<img width="2564" height="4016" alt="Presenter2UML" src="https://github.com/user-attachments/assets/49c188b6-787d-4619-aa2c-d70317f1bffc" />
+
 
 ## Wireframes
 

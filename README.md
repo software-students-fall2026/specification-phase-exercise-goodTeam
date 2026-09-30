@@ -186,8 +186,31 @@ As a student, I want corrected versions of inaccurate graphs to appear in the sh
 
 ## Wireframes
 
-See instructions. Delete this line and place your wireframe diagrams here, covering every new screen and every existing screen your proposal changes, for every type of user.
+All screens are black-and-white wireframes. Elements marked **ADDED** are new; **MOVED** marks something relocated from where it lives in the current app. Everything unmarked matches the existing app.
 
+### 00 Home — existing screen, unchanged (Instructor, Presenter)
+![Home](wireframes/00%20Home.png)
+Included as the prototype's entry point: open a lecture card to reach the Slide Editor. Nothing on this screen is added, moved, or renamed.
+
+### 01 Slide Editor — changed screen (Instructor, Presenter)
+![Slide Editor](wireframes/01%20Slider%20Editor.png)
+ADDED: the existing floating tool strip (Pen, Highlight, Eraser, New whiteboard slide) gains Select, Text, Image, Shape, and AI tools. Selecting an element shows resize handles and a Replace / Crop / Delete bar. Undo / Redo in the top bar. A "[N] comments" button on the slide opens the Comments panel (01b). Nothing existing was moved or renamed.
+
+### 01b Slide Editor – Comments — changed screen (Instructor, Presenter)
+![Slide Editor – Comments](wireframes/01b%20Slider%20Editor%20%28comments%29.png)
+ADDED: numbered markers show what each viewer comment refers to. Comments panel: reply, resolve / reopen, filter by this slide or all slides, and "Fix with Refine", which opens Refine with AI with the comment as the instruction. Toggle to turn viewer comments off. Comments are visible only to the deck's author.
+
+### 02 Refine with AI — changed screen (Instructor, Presenter)
+![Refine with AI](wireframes/02%20Refine%20with%20AI%20Panel.png)
+Opens from the new AI tool or the existing ⋮ → "Refine this slide with AI". MOVED: from a pop-up to a side panel, so the slide stays visible and you can refine in several rounds. CHANGED: today Refine applies instantly; now it shows an Original vs. Suggestion preview, and nothing changes until you Accept. ADDED: typed instructions, tone, quick prompts and saved presets, an "AI-generated" label, and a count of AI edits left (AI use is metered and capped). The existing options and "How much" slider are kept as-is.
+
+### 03 Deck Viewer — changed screen (Student, any viewer)
+![Deck Viewer](wireframes/03%20Slide%20Viewer.png)
+The deck as any non-author sees it. ADDED: "updated after the lecture" banner, EDITED tags and change notes on edited slides, As lectured / Final edited toggle, Previous / Next edited buttons, and a Slide tools panel: private notes, review later, AI "explain simply" (labeled AI-generated), comments to the author (optional "might be an error" tick, author replies, resolved status), and download. Comments are visible only to the deck's author. Existing: Play deck aloud, votes, view toggle, Translate, Share — unchanged.
+
+### 04 Image Panel — new screen (Instructor, Presenter)
+![Image Panel](wireframes/04%20Insert%20Image%20Panel%20Wireframe.png)
+Opens from the new Image tool, or from "Replace" on a selected image. ADDED: upload by drag-and-drop or Browse, search for a replacement image, or pick from saved brand images. Option to place an image (e.g. a logo) on every slide.
 ## Clickable Prototype
 
 See instructions. Delete this line and place a publicly-accessible link to your clickable prototype here.

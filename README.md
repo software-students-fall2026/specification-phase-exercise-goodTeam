@@ -36,7 +36,51 @@ Our AI tool creation concept we propose doesn't seem to appear in any of these s
 
 ## Stakeholders
 
-See instructions. Delete this line and replace with the name(s) of the stakeholder(s) you interviewed and lists showing their goals/needs, and problems/frustrations. Note which type of user each stakeholder represents. You may use pseudonyms or partial names to maintain their privacy, but you must privately share their full names and contact information as part of your submission of this exercise
+### LC (Student):
+LC is a junior studying Computer Science at NYU.
+
+Goals:
+- Easily create formal and detailed slides for software presentations
+- Access and annotate lecture slides for studying
+- Have easy and quick tools to design and populate slides without much work
+- Use AI integration to enrich slides and provide more indepth control of slide application
+
+Frustrations: 
+- Voice recognition sometimes doesn't catch on my words
+- Don't want to always dictate/want to have some partially planned slides
+- Wants more customizability with slides; add and move text, images, etc
+- Generated slides don't go indepth enough into the topics; seems very superficial
+
+### JH (Student):
+JH is a junior studying Game Design and Media, Culture, and Communication at NYU.
+
+Goals:
+- Create understandable and easily readable slides
+- Create interactable elements like polls and surveys to conduct media-related research
+- Have widely customizable and creative tools to create popping and artistic slide visuals
+- Cool slideshow interactions that allow it to function for non-presentation purposes (animation/game)
+
+Frustrations:
+- Lack of artistic and creative tools to expand styling capabilities
+- Voice recognition and generation was laggy, especially on mobile device
+- Slides created seemed to generic and boring
+- Wants privacy features; slides shouldn't automatically be posted into the discover panel
+
+### EH (Presenter):
+EH is a Technical Operations Manager at NYU.
+
+Goals:
+- Create formal but inviting slides that conform to NYU branding
+- Explain production space/equipment offerings by NYU to faculty/students in quick and concise way
+- Accurately describe workflows and tutorials on how certain AV equipment work
+- Formulate well designed and easy to follow slideshows for future documentation and reference
+
+Frustrations:
+- Text generation feels like a transcription rather than an aid
+- Wants AI to catch up and add things that presenter may have forgotten during the talk
+- Image generation is risky and may generate wrong or inaccurate visuals
+- Felt too chronological; newly generated slides rarely reference old topics
+
 
 ## Product Vision Statement
 

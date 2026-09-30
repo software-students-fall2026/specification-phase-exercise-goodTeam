@@ -1,187 +1,161 @@
+
 # Specification Phase Exercise
 
 A little exercise to get started with the specification phase of the software development lifecycle. In this exercise, your team specifies a set of improvements and new features for [The Slide Machine](https://theslidemachine.com) — see the [instructions](instructions.md) for detail, and the [background](background.md) for an introduction to the software product you are tasked with extending.
 
 ## Team members
 
-See instructions. Delete this line and replace with a list of the names of your team members, including links to each one's GitHub profile.
-
+### Team
+#### Sanay Daptardar [sanay-d-nyu](https://github.com/sanay-d-nyu)
+#### James Li [DyingRavioli](https://github.com/DyingRavioli)
+#### Ryan Jiang [UIYrj](https://github.com/UIYrj)
+#### Member 4
 ## Review of the Current Application
 
-During hands-on testing of The Slide Machine with lectures covering physics, introductory Python programming, and mathematics, the following strengths, weaknesses, and gaps were observed:
-
-1. **[Strength]** The system accurately generated simple mathematical expressions when they were stated verbally during a lecture.
-
-2. **[Strength]** When the system correctly understood the direction of the lecture, it was sometimes able to generate relevant slides quickly enough to keep pace with the speaker.
-
-3. **[Strength]** Incorrect or unnecessary generated content could be edited or removed, and unnecessary slides could be deleted while the lecture was still in progress.
-
-4. **[Weakness]** Generated images and animations were sometimes inaccurate or did not correctly represent the concept being discussed.
-
-5. **[Weakness]** The system sometimes misinterpreted the context or timing of spoken content. Incidental remarks, transitions, and references to future topics occasionally caused irrelevant or mistimed slides to be generated.
-
-6. **[Weakness]** Slide generation was more predictable when the lecture followed a prepared structure, while natural deviations from that structure were more likely to result in irrelevant or mistimed content.
-
-7. **[Weakness]** The system sometimes repeatedly changed or regenerated the same slide while the lecturer continued speaking, making the live presentation difficult to follow.
-
-8. **[Weakness]** Summary and key-takeaway slides did not consistently summarize only the material covered in the lecture. In some cases, new or future topics were introduced instead.
-
-9. **[Weakness]** Spoken programming content was not handled consistently. Code such as `print("Hello World")` was not reliably represented as code, programming keywords were not clearly distinguished from normal text, and unintended code such as `x = 10` was sometimes generated.
-
-10. **[Weakness]** Live transcription was less reliable when speech was fast or when pronunciation or accent varied, causing the system to fall behind or misunderstand parts of the lecture.
-
-11. **[Weakness]** Some automatically generated exit-ticket questions were inaccurate or did not correctly reflect the material covered during the lecture.
-
-12. **[Gap]** The system could not generate an actual graph when explicitly requested; it instead showed generic images of parabola-like graphs.
-
-13. **[Gap]** Text boxes could not be repositioned to adjust their distance from slide borders, limiting the lecturer's control over slide layout and spacing.
-
-14. **[Gap]** The system did not appear to respond when the lecturer directly addressed it as "Slide Machine" and verbally requested an action during the lecture.
+### Findings
+- Strength: The slides made are quite accurate to what was spoken.
+- Strength: Images generated are relevant.
+- Weakness: Some slides break when switching between designs.
+- Weakness: 'Refine with AI' feature makes the spoken part sound very robotic
+- Gap: No way to add images to a slide after it's been generated from speech.
+- Gap: No way to add a regular title/text slide after the fact.
+- Strength: Exit ticket generated had relevant questions and was nicely customizable.
+- Strength: Connection to google drive for exit ticket and sharing 
+- Strength: Export options are nice and easy to use
+- Gap: Great as a text-to-slides tool, could be brushed up as a slide-editing tool.
 
 ## Prior Art & Originality
 
-See instructions. Delete this line and replace with a short statement of what your team checked (the project's Future Work and Open Questions, its roadmap, and its open issues and pull requests) and which parts of your proposal are original — new work not already specified, scheduled, or proposed by someone else.
+In the project's repo [here](https://github.com/bloombar/slide-machine), we checked the following sections:
+- Sections 18 and 19 - Future work and Open Questions - of [the spec document](https://github.com/bloombar/slide-machine/blob/better-faster/docs/SPEC.md)
+- Open PRs
+- Open issues
+
+Our AI tool creation concept we propose doesn't seem to appear in any of these sections.
 
 ## Stakeholders
 
-We interviewed four stakeholders representing the two primary user types affected by our proposal: two instructors and two students. Partial names/pseudonyms are used in this public repository to protect participant privacy. Full names and contact information will be provided privately to the course administrators as required.
+### LC (Student):
+LC is a junior studying Computer Science at NYU.
 
-### Instructor Stakeholders
+Goals:
+- Easily create formal and detailed slides for software presentations
+- Access and annotate lecture slides for studying
+- Have easy and quick tools to design and populate slides without much work
+- Use AI integration to enrich slides and provide more indepth control of slide application
 
-- **Instructor A** — ALevel physics teacher with experience teaching topics that regularly use graphs, including motion, forces, and relationships between physical quantities.
-- **Instructor B** — ALevel mathematics teacher with experience teaching functions, coordinate graphs, transformations, and other visually represented mathematical concepts.
+Frustrations: 
+- Voice recognition sometimes doesn't catch on my words
+- Don't want to always dictate/want to have some partially planned slides
+- Wants more customizability with slides; add and move text, images, etc
+- Generated slides don't go indepth enough into the topics; seems very superficial
 
-During the interviews, both instructors discussed their current teaching practices and then interacted with The Slide Machine. Particular attention was paid to how the application handled mathematical and scientific content that would normally benefit from a graph or chart.
+### JH (Student):
+JH is a junior studying Game Design and Media, Culture, and Communication at NYU.
 
-#### Instructor Goals / Needs
+Goals:
+- Create understandable and easily readable slides
+- Create interactable elements like polls and surveys to conduct media-related research
+- Have widely customizable and creative tools to create popping and artistic slide visuals
+- Cool slideshow interactions that allow it to function for non-presentation purposes (animation/game)
 
-1. **Accurate visual representation of concepts.** Instructors need graphs and charts to represent the same mathematical or scientific relationship they are explaining verbally.
+Frustrations:
+- Lack of artistic and creative tools to expand styling capabilities
+- Voice recognition and generation was laggy, especially on mobile device
+- Slides created seemed to generic and boring
+- Wants privacy features; slides shouldn't automatically be posted into the discover panel
 
-2. **Clear axes, labels, scales, and units.** A generated graph needs enough context for students to understand what each axis and plotted value represents.
+### EH (Presenter):
+EH is a Technical Operations Manager at NYU.
 
-3. **Fast generation during a live lecture.** Visuals should appear quickly enough that instructors can continue teaching without interrupting the flow of the lecture.
+Goals:
+- Create formal but inviting slides that conform to NYU branding
+- Explain production space/equipment offerings by NYU to faculty/students in quick and concise way
+- Accurately describe workflows and tutorials on how certain AV equipment work
+- Formulate well designed and easy to follow slideshows for future documentation and reference
 
-4. **Ability to correct generated visuals.** Instructors need to be able to modify an equation, data value, range, label, or other graph property when the generated result does not match their intention.
+Frustrations:
+- Text generation feels like a transcription rather than an aid
+- Wants AI to catch up and add things that presenter may have forgotten during the talk
+- Image generation is risky and may generate wrong or inaccurate visuals
+- Felt too chronological; newly generated slides rarely reference old topics
 
-5. **Support for different types of academic visuals.** Instructors may need function graphs, plotted data, line charts, bar charts, and other common visual representations depending on the subject being taught.
-
-6. **Consistency between spoken explanation and displayed material.** Students should see a visual that accurately reflects what the instructor has just explained rather than an approximate or unrelated image.
-
-#### Instructor Problems / Frustrations
-
-1. **Incorrect graphs can mislead students.** A visual that does not accurately represent the equation or data being discussed may create more confusion than showing no graph at all.
-
-2. **Generic images are not a substitute for actual graphs.** When a specific mathematical graph is required, an image that merely resembles the concept does not provide the precision needed for teaching.
-
-3. **Creating or finding graphs during a lecture can interrupt teaching.** Switching to another application or manually preparing a graph can disrupt the flow of a live class.
-
-4. **Lack of editing control reduces trust.** If an automatically generated graph is slightly wrong, instructors need a straightforward way to correct it rather than discard it completely.
-
-5. **Missing labels or inappropriate scales can make otherwise correct visuals difficult to interpret.**
-
-6. **Automatically generated content must remain understandable across different subjects.** A graph-generation feature should not assume that all instructors use the same notation, terminology, or type of data.
-
-### Student Stakeholders
-
-- **Student A** — Student with experience learning mathematics and science topics that involve equations, functions, and graphical representations.
-- **Student B** — Student who regularly uses lecture slides and visual material when reviewing quantitative subjects.
-
-Both students were asked about how they learn from lecture material, particularly when equations, numerical relationships, and graphs are involved. They also interacted with The Slide Machine and considered how automatically generated lecture visuals could affect their understanding.
-
-#### Student Goals / Needs
-
-1. **Visual connection between equations and their meaning.** Students want to see how a mathematical expression or scientific relationship behaves rather than only reading the equation.
-
-2. **Graphs that match the instructor's explanation.** Students need the visual representation to correspond directly to the concept being discussed in class.
-
-3. **Clearly labelled visual information.** Axes, units, values, titles, and other labels help students interpret graphs without guessing what they represent.
-
-4. **Visuals that support later revision.** Students value having the same graphs and charts used during the lecture available in the shared lecture materials so they can review them when studying.
-
-5. **Accurate plots and data.** Students need confidence that the graphs they use for revision are mathematically or scientifically correct.
-
-6. **Simple, readable visuals.** Graphs should communicate the important relationship clearly without unnecessary visual clutter.
-
-#### Student Problems / Frustrations
-
-1. **Equations alone can be difficult to interpret.** A written expression may show the mathematical relationship without making its behaviour immediately understandable.
-
-2. **Incorrect graphs can reinforce misunderstandings.** Students may assume that material shown on a lecture slide is correct and use it later when studying.
-
-3. **Generic images provide little academic value when a precise graph is required.** A picture of a parabola, for example, does not necessarily show the function, scale, coordinates, or transformation being discussed.
-
-4. **Unlabelled or poorly scaled graphs are difficult to interpret without additional explanation.**
-
-5. **When an important visual is missing from the lecture deck, students may have difficulty reconstructing the instructor's explanation later.**
-
-6. **Inconsistent visual representations can make it harder to connect spoken explanations, equations, and lecture notes.**
-
-### Stakeholder Observation Summary
-
-Across both user types, accurate visual representation emerged as an important need for quantitative lecture material. Instructors emphasized the need to present and correct graphs without interrupting the flow of a lecture, while students emphasized the value of visual representations for understanding and later revision.
-
-During use of The Slide Machine, particular attention was given to requests for mathematical or scientific graphs. These observations, together with the stakeholder interviews, motivated further investigation of structured graph and chart support as a possible extension to the application.
 
 ## Product Vision Statement
 
-Extend The Slide Machine with structured, editable graph and chart generation that allows instructors to turn spoken equations, data, and quantitative relationships into accurate, clearly labelled visuals during live lectures, while giving students clearer visual representations that remain available in the shared lecture materials for understanding and revision.
+We propose to add an editing toolbar for use after a lecture has already been generated, with an AI tool editing feature.
 
 ## User Requirements
-### Instructor User Stories
-1. As an instructor, I want The Slide Machine to generate a graph from an equation I say during lecture so that I can visually explain the relationship to my students.   
-2. As an instructor, I want to generate charts from numerical data I describe aloud so that I can represent quantitative information without switching to another application.
-3. As an instructor, I want generated graphs to include clearly labeled axes so that students know what each axis represents.
-4. As an instructor, I want to specify units for graph axes so that the visual accurately represents the scientific or mathematical quantities I am discussing.
-5. As an instructor, I want to adjust the range and scale of a generated graph so that I can focus on the portion that is relevant to my explanation.
-6. As an instructor, I want to edit the equation or data used to generate a graph so that I can correct errors if The Slide Machine misinterprets what I said.
-7. As an instructor, I want to edit graph labels, titles, and units so that I can correct or clarify the generated visual before using it in my lecture.
-8. As an instructor, I want to choose between appropriate graph and chart types so that I can use the visual representation that best fits the material I am teaching.
-9. As an instructor, I want generated graphs and charts to appear quickly during a live lecture so that creating a visual does not interrupt the flow of my teaching.
-10. As an instructor, I want to review and correct a generated graph before relying on it in my lecture so that students are not shown inaccurate information.
-11. As an instructor, I want corrected graphs to remain in the final shared lecture deck so that students can review the accurate version after class.
 
-### Student User Stories 
-1. As a student, I want to see a graph that corresponds to an equation discussed in class so that I can understand the equation visually.
-2. As a student, I want graphs to match the instructor's spoken explanation so that I can connect what I hear with what I see on the slide.
-3. As a student, I want graph axes to be clearly labeled so that I can understand what each variable represents.
-4. As a student, I want units to be displayed on graphs when appropriate so that I can correctly interpret scientific and mathenatical quantities.
-5. As a student, I want important values and plotted data to be clearly represented so that I can undertsand the relationship being discussed.
-6. As a student, I want graphs and charts to use readable scales so that I can interpret the visual wihtout having to guess what the values mean.
-7. As a student, I want generated graphs to be simple and easy to read so that I can understand them while also following the live lecture.
-8. As a student, I want graphs used during the lecture to remain in the shared lecture materials so that I can review them later while studying.
-9. As a student, I want corrected versions of inaccurate graphs to appear in the shared lecture materials so that I do not study from incorrect information.
-10. As a student, I want equations and their corresponding graphs to appear together in the lecture material so that I can understand the connection between the mathematical expression and its visual behavior.
-11. As a student, I want charts generated from lecture data to accurately represent the values discussed by the instructor so that I can trust the visuals when reviewing the material later.  
+### User 1: student
+1. As a student, I want to see which slides were edited after the lecture so that I know how the deck differs from what I heard.
+2. As a student, I want to see the corrected version of a slide with a note that it was changed so that I trust the study material.
+3. As a student, I want to choose between the "as lectured" deck and the "final edited" deck so that I can study either.
+4. As a student, I want to add private notes to a slide so that I can study from one place.
+5. As a student, I want to flag a slide as unclear or possibly wrong so that the instructor can fix it.
+6. As a student, I want to ask the AI to explain a slide in simpler words, using only that slide's content, so that I can understand it on my own.
+7. As a student, I want to be told when an explanation is AI-generated so that I know to double-check it.
+8. As a student, I want to be notified when a deck I'm following is updated so that I don't study outdated material.
+9. As a student, I want to download the final edited deck so that I can study offline.
+10. As a student, I want to mark slides as "review later" so that I can prepare for the quiz.
+11. As a student, I want the shared deck to load with clear messages if the link has expired or the instructor made it private so that I know what happened.
+  
 
-      
+### User 2: instructor
+1. As an instructor, I want to add a blank title or text slide anywhere in a generated deck so that I can add an intro, agenda, or transition I never said
+ aloud.
+2. As an instructor, I want to upload my own image onto a slide so that I'm not limited to the images the app picked.
+3. As an instructor, I want to search for a replacement image from inside the editor so that I can swap out one that doesn't fit.
+4. As an instructor, I want to drag, resize, and delete images and text boxes on a slide so that I can fix the layout myself.
+5. As an instructor, I want to duplicate, reorder, and delete slides so that the deck follows the order I want to teach in.
+6. As an instructor, I want to undo and redo my edits so that I can experiment without fear of breaking the deck.
+  
+7. As an instructor, I want to select text on a slide and ask the AI to rewrite it with an instruction like "shorter" or "more formal" so that I control the
+change.
+8. As an instructor, I want to see the AI's suggestion next to the original and accept or reject it so that the AI never overwrites my work without my say-so.
+9. As an instructor, I want to choose a tone for AI rewrites, such as conversational, academic, or plain, so that the spoken narration doesn't sound robotic.
+10. As an instructor, I want the AI to rewrite only the slide text and not the narration, or the other way around, so that I don't lose one when I fix the
+other.
+11. As an instructor, I want to ask the AI to generate a new slide from a short prompt so that I can fill a gap in the lecture.
+12. As an instructor, I want to apply one AI instruction to the whole deck, such as "simplify the wording", and review every change before saving so that I
+can edit in bulk.
+13. As an instructor, I want an AI-generated summary or key-takeaways slide at the end of the deck so that I can close the lecture quickly.
+
+### User 3: non-academic presentor
+1. As a presenter, I want to start from a blank deck with no learning objectives or quiz so that the app fits a talk that isn't a class.
+2. As a presenter, I want to add a title, agenda, or section-divider slide after speaking so that the deck looks finished.
+3. As a presenter, I want to upload my logo and brand images and place them on any slide so that the deck matches my company.
+4. As a presenter, I want to ask the AI to rewrite a slide for a specific audience, such as executives, customers, or a general crowd, so that I can reuse one
+ talk.
+5. As a presenter, I want to ask the AI to make a slide punchier or shorter so that it works on screen.
+6. As a presenter, I want to lock a slide so that AI edits and bulk changes never touch it.
+7. As a presenter, I want to save my favorite AI instructions as one-click presets so that I don't retype them.
+8. As a presenter, I want to combine slides from several talks into one deck so that I can build a new presentation.
+9. As a presenter, I want to set an AI tone once and have it apply to everything so that the deck stays consistent.
+10. As a presenter, I want to export the edited deck to PowerPoint or Google Slides with my changes intact so that I can present anywhere.
+11. As a presenter, I want to be warned before I export or share if the AI added text I haven't reviewed so that I don't share a mistake.
+  
+
+
 ## Activity Diagrams
-### Activity Diagram 1 — Instructor: Generate a Graph from a Spoken Equation
 
-**User Story #1:**  
-As an instructor, I want The Slide Machine to generate a graph from an equation I say during lecture so that I can visually explain the relationship to my students.
+Student: As a student, I want to add private notes to a slide so that I can study from one place.
+<img width="2514" height="5656" alt="Student1UML" src="https://github.com/user-attachments/assets/71fafa02-e40d-4266-a3d2-14a8ade02387" />
 
-![User Story 1 Activity Diagram](UserStory1.drawio.png)
+Student: As a student, I want to see which slides were edited after the lecture so that I know how the deck differs from what I heard.
+<img width="2749" height="3456" alt="Student2UML" src="https://github.com/user-attachments/assets/d6a5e7fb-e7f3-42bb-9e28-eee5597d506c" />
 
-### Activity Diagram 2 — Instructor: Edit a Generated Graph
+Instructor: As an instructor, I want to drag, resize, and delete images and text boxes on a slide so that I can fix the layout myself.
+<img width="3647" height="4192" alt="Instructor1UML" src="https://github.com/user-attachments/assets/9a725d13-2571-401e-8395-b85b2e9a1292" />
 
-**User Story #7:**  
-As an instructor, I want to edit graph labels, titles, and units so that I can correct or clarify the generated visual before using it in my lecture.
+Instructor: As an instructor, I want to duplicate, reorder, and delete slides so that the deck follows the order I want to teach in.
+<img width="2556" height="4272" alt="Instructor2UML" src="https://github.com/user-attachments/assets/84bd4905-1a5b-43e7-8d13-2e1394c56b19" />
 
-![User Story 7 Activity Diagram](UserStory7.drawio.png)
+Presenter: As a presenter, I want to save my favorite AI instructions as one-click presets so that I don't retype them.
+<img width="2660" height="3722" alt="Presenter1UML" src="https://github.com/user-attachments/assets/82594cd7-f664-443a-a983-5ca75fbf9d7a" />
 
-### Activity Diagram 3 — Student: View a Generated Graph in Shared Lecture Materials
-
-**User Story #8:**  
-As a student, I want graphs used during the lecture to remain in the shared lecture materials so that I can review them later while studying.
-
-![User Story 8 Activity Diagram](UserStory8.drawio.png)
-
-### Activity Diagram 4 — Student: View a Corrected Graph in Shared Lecture Materials
-
-**User Story #9:**  
-As a student, I want corrected versions of inaccurate graphs to appear in the shared lecture materials so that I do not study from incorrect information.
-
-![User Story 9 Activity Diagram](UserStory9.drawio.png)
+Presenter: As a presenter, I want to set an AI tone once and have it apply to everything so that the deck stays consistent.
+<img width="2564" height="4016" alt="Presenter2UML" src="https://github.com/user-attachments/assets/49c188b6-787d-4619-aa2c-d70317f1bffc" />
 
 
 ## Wireframes
@@ -211,6 +185,7 @@ The deck as any non-author sees it. ADDED: "updated after the lecture" banner, E
 ### 04 Image Panel — new screen (Instructor, Presenter)
 ![Image Panel](wireframes/04%20Insert%20Image%20Panel%20Wireframe.png)
 Opens from the new Image tool, or from "Replace" on a selected image. ADDED: upload by drag-and-drop or Browse, search for a replacement image, or pick from saved brand images. Option to place an image (e.g. a logo) on every slide.
+
 ## Clickable Prototype
 
 See instructions. Delete this line and place a publicly-accessible link to your clickable prototype here.

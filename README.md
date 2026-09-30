@@ -188,8 +188,18 @@ Opens from the new Image tool, or from "Replace" on a selected image. ADDED: upl
 
 ## Clickable Prototype
 
-See instructions. Delete this line and place a publicly-accessible link to your clickable prototype here.
+**[Open the clickable prototype](https://www.figma.com/proto/wN8f3Z96Bm90tcNwvKGsOt/Slide-Machine-%E2%80%93-Wireframes?page-id=0%3A1&node-id=26-882&p=f&viewport=3891%2C3568%2C1&t=HhLdKv9NLTeLmIsc-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=26%3A882)** — no login required.
 
+**Start:** the Home screen. **Tip:** click any empty spot to see what's clickable.
+
+**1-minute walkthrough of the core idea:**
+1. **Home** → click any lecture in **Discover** → the **Deck Viewer** (what a student or any viewer sees: edited-slide markers, notes, AI "explain simply", comments).
+2. Write a comment → **Post** → switch to the **author's view**: the Comments panel.
+3. **Fix with Refine** → **Refine with AI**: the AI suggests a change next to the original, and nothing changes until you **Accept**.
+4. **Accept** → back to the **Slide Editor** with its expanded tool strip.
+5. **Image** tool → **Image Panel** → **Replace image** → back to the editor.
+6. Click the **logo** (top left) on any screen to return **Home**.
+   
 ## Stakeholder Demo
 
 See instructions. Delete this line and place a link to the deck The Slide Machine generated during your presentation here, after you have presented.

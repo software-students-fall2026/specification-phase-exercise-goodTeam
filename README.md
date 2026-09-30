@@ -1,3 +1,4 @@
+
 # Specification Phase Exercise
 
 A little exercise to get started with the specification phase of the software development lifecycle. In this exercise, your team specifies a set of improvements and new features for [The Slide Machine](https://theslidemachine.com) — see the [instructions](instructions.md) for detail, and the [background](background.md) for an introduction to the software product you are tasked with extending.
@@ -7,7 +8,7 @@ A little exercise to get started with the specification phase of the software de
 ### Team
 #### Sanay Daptardar [sanay-d-nyu](https://github.com/sanay-d-nyu)
 #### James Li [DyingRavioli](https://github.com/DyingRavioli)
-#### Member 3
+#### Ryan Jiang [UIYrj](https://github.com/UIYrj)
 #### Member 4
 ## Review of the Current Application
 
@@ -159,12 +160,46 @@ Presenter: As a presenter, I want to set an AI tone once and have it apply to ev
 
 ## Wireframes
 
-See instructions. Delete this line and place your wireframe diagrams here, covering every new screen and every existing screen your proposal changes, for every type of user.
+All screens are black-and-white wireframes. Elements marked **ADDED** are new; **MOVED** marks something relocated from where it lives in the current app. Everything unmarked matches the existing app.
+
+### 00 Home — existing screen, unchanged (Instructor, Presenter)
+![Home](wireframes/00%20Home.png)
+Included as the prototype's entry point: open a lecture card to reach the Slide Editor. Nothing on this screen is added, moved, or renamed.
+
+### 01 Slide Editor — changed screen (Instructor, Presenter)
+![Slide Editor](wireframes/01%20Slider%20Editor.png)
+ADDED: the existing floating tool strip (Pen, Highlight, Eraser, New whiteboard slide) gains Select, Text, Image, Shape, and AI tools. Selecting an element shows resize handles and a Replace / Crop / Delete bar. Undo / Redo in the top bar. A "[N] comments" button on the slide opens the Comments panel (01b). Nothing existing was moved or renamed.
+
+### 01b Slide Editor – Comments — changed screen (Instructor, Presenter)
+![Slide Editor – Comments](wireframes/01b%20Slider%20Editor%20%28comments%29.png)
+ADDED: numbered markers show what each viewer comment refers to. Comments panel: reply, resolve / reopen, filter by this slide or all slides, and "Fix with Refine", which opens Refine with AI with the comment as the instruction. Toggle to turn viewer comments off. Comments are visible only to the deck's author.
+
+### 02 Refine with AI — changed screen (Instructor, Presenter)
+![Refine with AI](wireframes/02%20Refine%20with%20AI%20Panel.png)
+Opens from the new AI tool or the existing ⋮ → "Refine this slide with AI". MOVED: from a pop-up to a side panel, so the slide stays visible and you can refine in several rounds. CHANGED: today Refine applies instantly; now it shows an Original vs. Suggestion preview, and nothing changes until you Accept. ADDED: typed instructions, tone, quick prompts and saved presets, an "AI-generated" label, and a count of AI edits left (AI use is metered and capped). The existing options and "How much" slider are kept as-is.
+
+### 03 Deck Viewer — changed screen (Student, any viewer)
+![Deck Viewer](wireframes/03%20Slide%20Viewer.png)
+The deck as any non-author sees it. ADDED: "updated after the lecture" banner, EDITED tags and change notes on edited slides, As lectured / Final edited toggle, Previous / Next edited buttons, and a Slide tools panel: private notes, review later, AI "explain simply" (labeled AI-generated), comments to the author (optional "might be an error" tick, author replies, resolved status), and download. Comments are visible only to the deck's author. Existing: Play deck aloud, votes, view toggle, Translate, Share — unchanged.
+
+### 04 Image Panel — new screen (Instructor, Presenter)
+![Image Panel](wireframes/04%20Insert%20Image%20Panel%20Wireframe.png)
+Opens from the new Image tool, or from "Replace" on a selected image. ADDED: upload by drag-and-drop or Browse, search for a replacement image, or pick from saved brand images. Option to place an image (e.g. a logo) on every slide.
 
 ## Clickable Prototype
 
-See instructions. Delete this line and place a publicly-accessible link to your clickable prototype here.
+**[Open the clickable prototype](https://www.figma.com/proto/wN8f3Z96Bm90tcNwvKGsOt/Slide-Machine-%E2%80%93-Wireframes?page-id=0%3A1&node-id=26-882&p=f&viewport=3891%2C3568%2C1&t=HhLdKv9NLTeLmIsc-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=26%3A882)** — no login required.
 
+**Start:** the Home screen. **Tip:** click any empty spot to see what's clickable.
+
+**1-minute walkthrough of the core idea:**
+1. **Home** → click any lecture in **Discover** → the **Deck Viewer** (what a student or any viewer sees: edited-slide markers, notes, AI "explain simply", comments).
+2. Write a comment → **Post** → switch to the **author's view**: the Comments panel.
+3. **Fix with Refine** → **Refine with AI**: the AI suggests a change next to the original, and nothing changes until you **Accept**.
+4. **Accept** → back to the **Slide Editor** with its expanded tool strip.
+5. **Image** tool → **Image Panel** → **Replace image** → back to the editor.
+6. Click the **logo** (top left) on any screen to return **Home**.
+   
 ## Stakeholder Demo
 
 See instructions. Delete this line and place a link to the deck The Slide Machine generated during your presentation here, after you have presented.

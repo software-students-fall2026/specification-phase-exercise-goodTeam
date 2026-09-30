@@ -11,7 +11,6 @@ A little exercise to get started with the specification phase of the software de
 #### Member 4
 ## Review of the Current Application
 
-See instructions. Delete this line and replace with your team's findings from using the live app at https://theslidemachine.com — at least 10 specific observations, each labeled as a strength, a weakness, or a gap, and drawn from more than one team member's use of the app.
 ### Findings
 - Strength: The slides made are quite accurate to what was spoken.
 - Strength: Images generated are relevant.
@@ -26,7 +25,6 @@ See instructions. Delete this line and replace with your team's findings from us
 
 ## Prior Art & Originality
 
-See instructions. Delete this line and replace with a short statement of what your team checked (the project's Future Work and Open Questions, its roadmap, and its open issues and pull requests) and which parts of your proposal are original — new work not already specified, scheduled, or proposed by someone else.
 In the project's repo [here](https://github.com/bloombar/slide-machine), we checked the following sections:
 - Sections 18 and 19 - Future work and Open Questions - of [the spec document](https://github.com/bloombar/slide-machine/blob/better-faster/docs/SPEC.md)
 - Open PRs
@@ -84,13 +82,10 @@ Frustrations:
 
 ## Product Vision Statement
 
-See instructions. Delete this line and place your Product Vision Statement here — one sentence describing the improvements and new features your team is proposing for The Slide Machine.
-
-We propose to add an editing toolbal for use after a lecture has already been generated, with an AI editing feature.
+We propose to add an editing toolbar for use after a lecture has already been generated, with an AI tool editing feature.
 
 ## User Requirements
 
-See instructions. Delete this line and place a list of your User Stories here, grouped by type of user. These should describe functionality that is new or changed, not functionality the app already has.  
 ### User 1: student
 1. As a student, I want to see which slides were edited after the lecture so that I know how the deck differs from what I heard.
 2. As a student, I want to see the corrected version of a slide with a note that it was changed so that I trust the study material.
